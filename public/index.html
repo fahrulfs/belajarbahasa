@@ -1,71 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth focus:scroll-auto">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hangeulin</title>
+    <link rel="icon" href="assets/logo2.svg">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="font-mainFont">
     <!-- NAVBAR -->
-    <nav id="navbar" class="relative h-[57px] py-9 w-full flex justify-between items-center mx-auto lg:px-[70px]">
-        <div><img src="assets/logo1.svg" alt="" class="w-32 mx-6 md:mx-10 md:w-40 lg:w-48 lg:mx-10 right-0"></div>
-        <div class="hidden lg:flex">
-            <ul class="lg:flex gap-6 capitalize text-base font-medium list-none">
-                <li><a href="" class="hover:text-yellow-500 duration-200 ease-linear"> kursus</a></li>
-                <li><a href="" class="hover:text-yellow-500 duration-200 ease-linear"> beasiswa</a></li>
-                <li><a href="" class="hover:text-yellow-500 duration-200 ease-linear"> travel</a></li>
-                <li><a href="" class="hover:text-yellow-500 duration-200 ease-linear"> tentang kami</a></li>
-            </ul>
-        </div>
-        <div class="hidden lg:flex lg:justify-between gap-4 lg:me-[70px]">
-            <a href="">
-                <button
-                    class="bg-yellow-400 capitalize p-2 rounded-md hover:bg-blue-800 hover:text-white duration-300 ease-linear">masuk</button>
-            </a>
-            <a href="">
-                <button
-                    class="bg-transparent text-black capitalize p-2 outline outline-1 outline-accent2 rounded-md ">daftar</button>
-            </a>
-        </div>
-        <div class="lg:hidden flex items-center px-4">
-            <button id="hamb-menu" class="block absolute right-0 px-8 lg:hidden">
-                <span class="hamb-menu origin-top-left duration-300 ease-linear"></span>
-                <span class="hamb-menu duration-300 ease-linear"></span>
-                <span class="hamb-menu origin-bottom-left duration-300 ease-linear"></span>
-            </button>
+    <nav id="navbar" class="relative py-5 w-full">
+        <div class=" flex justify-between items-center px-5 md:px-10 lg:px-[70px]">
+            <div>
+                <a href="">
+                    <img src="assets/logo1.svg" alt="" class="w-[150px] md:w-[175px] lg:w-[200px]">
+                </a>
+            </div>
+            <div class="hidden lg:flex">
+                <ul class="lg:flex gap-6 capitalize text-base font-semibold list-none">
+                    <li><a href="" class="hover:text-accent duration-200 "> kursus</a></li>
+                    <li><a href="" class="hover:text-accent duration-200"> beasiswa</a></li>
+                    <li><a href="" class="hover:text-accent duration-200"> travel</a></li>
+                    <li><a href="" class="hover:text-accent duration-200"> tentang kami</a></li>
+                </ul>
+            </div>
+            <div class="hidden lg:flex lg:justify-between gap-4 no-underline">
+                <a href="">
+                    <button
+                        class="bg-main capitalize p-2 rounded-md hover:bg-accent hover:text-white duration-200 ease-linear">masuk</button>
+                </a>
+                <a href="">
+                    <button
+                        class="bg-transparent text-black capitalize p-2 outline outline-1 outline-accent2 rounded-md ">daftar</button>
+                </a>
+
+
+            </div>
+            <div class="lg:hidden flex items-center">
+                <button id="hamb-menu" class="block absolute right-0 px-6 lg:hidden">
+                    <span class="hamb-menu origin-top-left duration-300 ease-linear"></span>
+                    <span class="hamb-menu duration-300 ease-linear"></span>
+                    <span class="hamb-menu origin-bottom-left duration-300 ease-linear"></span>
+                </button>
+            </div>
+
         </div>
         <div id="nav-menu"
             class="animate hidden lg:hidden absolute pt-5 px-4 py-5 bg-white shadow-lg rounded-lg top-full w-full md:w-1/2 right-0 lg:justify-end lg:w-full lg:align-baseline lg:static lg:rounded-none lg:shadow-none">
             <ul class="capitalize text-base lg:flex lg:w-full lg:justify-end gap-x-10 ms-4 ">
                 <li>
-                    <a href="" class="flex py-2 hover:text-yellow-500 duration-200 ease-in">kursus</a>
+                    <a href="" class="flex py-2 hover:text-accent duration-200 ease-in">kursus</a>
                 </li>
                 <li>
 
-                    <a href="" class="flex py-2 hover:text-yellow-500 duration-200 ease-in">beasiswa</a>
+                    <a href="" class="flex py-2 hover:text-accent duration-200 ease-in">beasiswa</a>
                 </li>
                 <li>
 
-                    <a href="" class="flex py-2 hover:text-yellow-500 duration-200 ease-in">travel</a>
+                    <a href="" class="flex py-2 hover:text-accent duration-200 ease-in">travel</a>
                 </li>
                 <li>
-                    <a href="" class="flex py-2 hover:text-yellow-500 duration-200 ease-in">tentang
+                    <a href="" class="flex py-2 hover:text-accent duration-200 ease-in">tentang
                         kami</a>
                 </li>
                 <li>
                     <a href="" class="py-2 flex gap-5">
                         <a href="">
                             <button
-                                class="bg-yellow-400 capitalize p-2 rounded-md hover:bg-blue-800 hover:text-white duration-300 ease-linear">masuk</button>
+                                class="bg-main capitalize p-2 rounded-md hover:bg-accent hover:text-white duration-200 ease-linear">masuk</button>
                         </a>
                         <a href="">
                             <button
                                 class="bg-transparent text-black capitalize p-2 outline outline-1 outline-accent2 rounded-md ">daftar</button>
                         </a>
-
                         </button></a>
                 </li>
             </ul>
@@ -74,129 +83,130 @@
     <!-- NAVBAR -->
 
     <!-- HERO -->
-    <section id="hero lg:mt-[57px]">
-        <div class="container mx-auto">
-            <div
-                class="h-screen md:h-1/2 lg:h-screen flex flex-wrap-reverse justify-between md:w-full xl:flex-nowrap items-center md:justify-center">
-                <div class="w-full px-4 lg:px-[70px]">
-                    <h1 class="capitalize text-2xl font-semibold mt-3 md:text-3xl lg:text-5xl"> Solusi
-                        <span class="text-accent font-bold">Terbaik</span> Untuk Belajar
-                        Bahasa Korea
-                    </h1>
-                    <p class="mt-4 w-full text-gray-800">Lorem ipsum dolor
-                        sit
-                        amet,
-                        consectetur
-                        adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ex excepturi
-                    </p>
-                    <a href="#">
-                        <button
-                            class="bg-yellow-400 capitalize font-normal text-base w-full mt-4 lg:w-1/2 h-12 rounded-xl cursor-pointer hover:shadow-lg hover:scale-105 hover:bg-accent  hover:text-white duration-200 ">gabung
-                            sekarang</button>
-                    </a>
-                </div>
-                <div class="w-full md:w-1/2 lg:w-[750px] lg:me-[70px] lg:mt-0">
-                    <img src="assets/hero.svg" alt="">
-                </div>
+    <section id="hero" class="min-h-dvh lg:h-dvh-1/2 flex">
+        <div
+            class="flex flex-wrap-reverse justify-center lg:flex-nowrap lg:items-center md:items-center lg:justify-between px-4 md:px-10 lg:px-[70px]">
+            <div class="w-full">
+                <h1 class="capitalize text-3xl font-semibold mt-3 md:text-[40px] lg:text-[50px] lg:leading-[50px]">
+                    Solusi
+                    <span class="text-accent font-bold">Terbaik</span> Untuk Belajar
+                    Bahasa Korea
+                </h1>
+                <p class="mt-4 w-full text-gray-800">Lorem ipsum dolor
+                    sit
+                    amet,
+                    consectetur
+                    adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ex excepturi
+                </p>
+                <a href="#">
+                    <button
+                        class="bg-main capitalize font-normal text-base w-full mt-4 lg:w-1/2 h-12 rounded-xl cursor-pointer hover:shadow-lg hover:scale-105 hover:bg-accent  hover:text-white duration-200 ">gabung
+                        sekarang</button>
+                </a>
             </div>
+            <div class="w-full md:w-[650px] lg:w-[750px]">
+                <img src="assets/hero.svg" alt="">
+            </div>
+        </div>
         </div>
     </section>
     <!-- HERO -->
 
     <!-- SERVICE -->
-    <section id="service">
-        <div class="container mx-auto px-4 lg:h-screen lg:px-[70px]">
-            <div class="pt-12 w-full flex flex-wrap md:flex-wrap lg:flex-nowrap items-center justify-between">
-                <div class="w-full mb-4">
-                    <h1 class="text-2xl md:text-3xl lg:text-3xl font-medium w-full md:w-1/2 lg:w-full capitalize">
-                        Layanan Kami
-                        Dalam
-                        Membantu
-                        belajar Anda
-                    </h1>
-                    <img src="assets/service.svg" alt="" class="mt-4">
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
-                    <div class="p-2">
-                        <div class="p-2 bg-main w-fit rounded-lg">
-                            <svg class="w-6 h-6 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                            </svg>
-
-                        </div>
-                        <h1 class="capitalize text-xl mt-2 font-semibold">Materi terbaru</h1>
-                        <p class="text-gray-900 font-light text-base">Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit.
-                            Sequi ad
-                            pariatur unde.</p>
-                    </div>
-                    <div class="p-2">
-                        <div class="p-2 bg-main w-fit rounded-lg">
-
-                            <svg class="w-6 h-6 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z"
-                                    clip-rule="evenodd" />
-                            </svg>
-
-                        </div>
-                        <h1 class="font-semibold capitalize text-xl mt-2">pengajar pengalaman</h1>
-                        <p class="text-gray-900 font-light text-base">Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit.
-                            Sequi ad
-                            pariatur unde.</p>
-                    </div>
-                    <div class="p-2">
-                        <div class="p-2 bg-main w-fit rounded-lg">
-                            <svg width="25" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <title>date-fns</title>
-                                <path
-                                    d="M1.065 6.534C.355 8.246 0 10.068 0 11.999c0 1.932.355 3.754 1.065 5.466a13.768 13.768 0 0 0 3.068 4.549h2.685c-2.784-2.756-4.176-6.094-4.176-10.015 0-3.92 1.392-7.258 4.176-10.014H4.133a13.768 13.768 0 0 0-3.068 4.549Zm21.869 10.931c.71-1.712 1.066-3.534 1.066-5.466 0-1.931-.356-3.753-1.066-5.465a13.768 13.768 0 0 0-3.068-4.549h-2.685c2.784 2.756 4.176 6.094 4.176 10.014 0 3.921-1.392 7.259-4.176 10.015h2.685a13.768 13.768 0 0 0 3.068-4.549ZM11.63 3.299H9.854v10.21h1.776v-.033l7.218-7.218-1.151-1.151-6.067 6.067V3.299Z" />
-                            </svg>
-                        </div>
-                        <h1 class="font-semibold capitalize text-xl mt-2">akses selamanya</h1>
-                        <p class="text-gray-900 font-light text-base">Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit.
-                            Sequi ad
-                            pariatur unde.</p>
-                    </div>
-                    <div class="p-2">
-                        <div class="p-2 bg-main w-fit rounded-lg">
-                            <svg class="w-6 h-6 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
-                                    clip-rule="evenodd" />
-                            </svg>
-
-                        </div>
-                        <h1 class="font-semibold capitalize text-xl mt-2">sertifikasi</h1>
-                        <p class="text-gray-900 font-light text-base">Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit.
-                            Sequi ad
-                            pariatur unde.</p>
-                    </div>
-
-                </div>
+    <section id="service" class="">
+        <div
+            class="w-full flex flex-wrap md:flex-wrap lg:flex-nowrap items-center justify-between px-4 md:px-10 lg:px-[70px]">
+            <div class="w-full mb-4">
+                <h1
+                    class="text-2xl md:text-3xl lg:text-[35px] lg:leading-[45px] font-semibold w-full md:w-1/2 lg:w-full capitalize">
+                    Layanan Kami
+                    Dalam
+                    Membantu
+                    belajar Anda
+                </h1>
+                <img src="assets/service.svg" alt="" class="mt-4">
             </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                <div class="p-2">
+                    <div class="p-2 bg-main w-fit rounded-lg">
+                        <svg class="w-6 h-6 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+
+                    </div>
+                    <h1 class="capitalize text-xl mt-2 font-semibold">Materi terbaru</h1>
+                    <p class="text-gray-900 font-light text-base">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit.
+                        Sequi ad
+                        pariatur unde.</p>
+                </div>
+                <div class="p-2">
+                    <div class="p-2 bg-main w-fit rounded-lg">
+
+                        <svg class="w-6 h-6 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                    </div>
+                    <h1 class="font-semibold capitalize text-xl mt-2">pengajar pengalaman</h1>
+                    <p class="text-gray-900 font-light text-base">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit.
+                        Sequi ad
+                        pariatur unde.</p>
+                </div>
+                <div class="p-2">
+                    <div class="p-2 bg-main w-fit rounded-lg">
+                        <svg width="25" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title>date-fns</title>
+                            <path
+                                d="M1.065 6.534C.355 8.246 0 10.068 0 11.999c0 1.932.355 3.754 1.065 5.466a13.768 13.768 0 0 0 3.068 4.549h2.685c-2.784-2.756-4.176-6.094-4.176-10.015 0-3.92 1.392-7.258 4.176-10.014H4.133a13.768 13.768 0 0 0-3.068 4.549Zm21.869 10.931c.71-1.712 1.066-3.534 1.066-5.466 0-1.931-.356-3.753-1.066-5.465a13.768 13.768 0 0 0-3.068-4.549h-2.685c2.784 2.756 4.176 6.094 4.176 10.014 0 3.921-1.392 7.259-4.176 10.015h2.685a13.768 13.768 0 0 0 3.068-4.549ZM11.63 3.299H9.854v10.21h1.776v-.033l7.218-7.218-1.151-1.151-6.067 6.067V3.299Z" />
+                        </svg>
+                    </div>
+                    <h1 class="font-semibold capitalize text-xl mt-2">akses selamanya</h1>
+                    <p class="text-gray-900 font-light text-base">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit.
+                        Sequi ad
+                        pariatur unde.</p>
+                </div>
+                <div class="p-2">
+                    <div class="p-2 bg-main w-fit rounded-lg">
+                        <svg class="w-6 h-6 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                    </div>
+                    <h1 class="font-semibold capitalize text-xl mt-2">sertifikasi</h1>
+                    <p class="text-gray-900 font-light text-base">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit.
+                        Sequi ad
+                        pariatur unde.</p>
+                </div>
+
+            </div>
+        </div>
         </div>
 
     </section>
     <!-- SERVICE -->
 
     <!-- PRICE -->
-    <section id="price">
-        <div class="container mx-auto mt-10 lg:h-screen lg:px-[70px]">
+    <section id="price" class="">
+        <div class="px-4 md:px-10 lg-px-[70px] pt-24">
             <div class="w-full text-center">
                 <h1 class="font-semibold capitalize text-2xl md:text-3xl lg:text-4xl">pilih paket</h1>
                 <p class="text-base text-gray-900"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi atque
                 </p>
             </div>
             <div
-                class="mt-10 flex flex-wrap gap-5 md:gap-8 lg:gap-12 lg:flex-nowrap justify-between md:justify-center px-2">
+                class="mt-10 flex flex-wrap gap-3 md:gap-8 lg:gap-8 lg:flex-nowrap justify-between md:justify-center px-2 lg:px-6">
 
 
                 <div class="w-full md:w-auto lg:w-full p-4 bg-accent2  rounded-lg h-fit">
@@ -241,7 +251,7 @@
                         </li>
                     </ul>
                     <button type="button"
-                        class=" capitalize text-black bg-yellow-400 hover:shadow-lg hover:scale-105 duration-200  cursor-pointer font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">beli
+                        class=" capitalize text-black bg-main hover:shadow-lg hover:scale-105 duration-200  cursor-pointer font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">beli
                         kelas</button>
                 </div>
                 <div class="w-full md:w-auto lg:w-full p-4 bg-accent   rounded-lg h-fit">
@@ -302,7 +312,7 @@
                         </li>
                     </ul>
                     <button type="button"
-                        class=" capitalize text-black bg-yellow-400 hover:shadow-lg hover:scale-105 duration-200  cursor-pointer font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">beli
+                        class=" capitalize text-black bg-main hover:shadow-lg hover:scale-105 duration-200  cursor-pointer font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">beli
                         kelas</button>
                 </div>
                 <div class="w-full md:w-auto lg:w-full p-4 bg-accent2  rounded-lg h-fit">
@@ -347,7 +357,7 @@
                         </li>
                     </ul>
                     <button type="button"
-                        class=" capitalize text-black bg-yellow-400 hover:shadow-lg hover:scale-105 duration-200  cursor-pointer font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">beli
+                        class=" capitalize text-black bg-main hover:shadow-lg hover:scale-105 duration-200  cursor-pointer font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">beli
                         kelas</button>
                 </div>
             </div>
@@ -358,11 +368,9 @@
     <!-- TESTIMONIAL-->
     <section id="testimonial">
         <div class="container mx-auto">
-
-
             <div class="px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
                 <figure class="max-w-screen-md mx-auto">
-                    <svg class="h-12 mx-auto mb-3 text-yellow-500" viewBox="0 0 24 27" fill="none"
+                    <svg class="h-12 mx-auto mb-3 text-main" viewBox="0 0 24 27" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
@@ -376,7 +384,7 @@
                     </blockquote>
                     <figcaption class="flex items-center justify-center mt-6 space-x-3">
                         <img class="w-6 h-6 rounded-full" src="assets/testimoni.svg" alt="profile picture">
-                        <div class="flex items-center divide-x-2 divide-yellow-500">
+                        <div class="flex items-center divide-x-2 divide-main">
                             <div class="pr-3 font-medium ">Lorem Ipsum</div>
                             <div class="pl-3 text-sm capitalize">solo,jawa
                                 tengah</div>
@@ -386,24 +394,23 @@
 
             </div>
         </div>
-        <div class="h-fit px-2">
-            <div
-                class="container md:mx-auto rounded-lg bg-second lg:w-fit lg:h-[234px] lg:mx-[70px] flex flex-wrap lg:flex-nowrap lg:justify-betwen items-center p-2 mb-10">
-                <div class="w-full lg:w-1/2 pt-2 p-3 h-fit">
-                    <h1 class="font-semibold text-2xl capitalize">siap bergabung ?</h1>
-                    <p class="text-base text-gray-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                        similique enim
-                        dolorem
-                        aliquid voluptatibus
-                        rem velit nihil quaerat! Doloremque necessitatibus pariatur sequi omnis.</p>
-                </div>
-                <div class="w-full lg:w-1/2 lg:text-end p-2">
-                    <a href="">
-                        <button
-                            class="w-full lg:w-1/2 bg-accent hover:shadow-lg hover:scale-105 duration-200 p-2 rounded-md capitalize text-white">bergabung</button>
-                </div>
-                </a>
+        <div
+            class="h-fit mx-4 md:mx-10 rounded-lg bg-second lg:w-fit lg:h-[234px] lg:mx-[70px] flex flex-wrap lg:flex-nowrap lg:justify-betwen items-center p-2 mb-10">
+            <div class="w-full lg:w-1/2 pt-2 p-3 h-fit">
+                <h1 class="font-semibold text-2xl capitalize">siap bergabung ?</h1>
+                <p class="text-base text-gray-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                    similique enim
+                    dolorem
+                    aliquid voluptatibus
+                    rem velit nihil quaerat! Doloremque necessitatibus pariatur sequi omnis.</p>
             </div>
+            <div class="w-full lg:w-1/2 lg:text-end p-2">
+                <a href="">
+                    <button
+                        class="w-full lg:w-1/2 bg-accent hover:shadow-lg hover:scale-105 duration-200 p-2 rounded-md capitalize text-white">bergabung</button>
+            </div>
+            </a>
+        </div>
         </div>
     </section>
     <!-- TESTIMONIAL -->
@@ -415,7 +422,7 @@
     <!--FOOTER -->
     <footer class="bg-accent2 py-4">
 
-        <div class="container mx-auto lg:px-[70px]">
+        <div class="px-2 md:px-[35px] lg:px-[70px]">
             <div class="px-4 grid grid-rows-5 grid-cols-1 lg:grid-rows-1 lg:grid-cols-5 lg:px-0 gap-4 p-5">
                 <div class="">
                     <img src="assets/logo2.svg" alt="">
@@ -426,7 +433,7 @@
                         repudiandae!</p>
                 </div>
                 <div class="list-none capitalize">
-                    <h1 class="font-medium text-xl mb-4">Legalitas</h1>
+                    <h1 class="font-semibold text-xl mb-4">Legalitas</h1>
                     <li>
                         <a href="" class="hover:text-blue-800">kebijakan privasi</a>
                     </li>
@@ -435,7 +442,7 @@
                     </li>
                 </div>
                 <div class="list-none capitalize">
-                    <h1 class="font-medium text-xl mb-4">Jelajahi</h1>
+                    <h1 class="font-semibold text-xl mb-4">Jelajahi</h1>
                     <li>
                         <a href="" class="hover:text-blue-800">kursus</a>
                     </li>
@@ -447,7 +454,7 @@
                     </li>
                 </div>
                 <div class="list-none capitalize">
-                    <h1 class="font-medium text-xl mb-4">Perusahaan</h1>
+                    <h1 class="font-semibold text-xl mb-4">Perusahaan</h1>
                     <li>
                         <a href="" class="hover:text-blue-800">Hubungi kami</a>
                     </li>
@@ -456,11 +463,11 @@
                     </li>
                 </div>
                 <div class="">
-                    <h1 class="font-medium text-xl ">Newsletter</h1>
+                    <h1 class="font-semibold text-xl ">Newsletter</h1>
                     <input type="email" class="mt-2 p-2 w-full h-8 shadow-md rounded-md"
                         placeholder="enter your email ...">
                     <a href=""><button
-                            class="mt-2 bg-blue-800 p-2 outline-none rounded-md text-white font-normal hover:shadow-lg hover:scale-105 duration-200 ">subscribe</button></a>
+                            class=" capitalize mt-2 bg-blue-800 p-2 outline-none rounded-md text-white font-normal hover:shadow-lg hover:scale-105 duration-200 ">subscribe</button></a>
                 </div>
 
             </div>

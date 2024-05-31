@@ -14,7 +14,7 @@ module.exports = {
         'auto-fit': 'repeat(auto-fit, minmax(200px, auto))',
       },
         colors: {
-          'main': '#e1a90c',
+          'main': '#fbbf24',
           'second': '#f4c237',
           'accent': '#056aad',
           'accent2': '#fae3a4'
