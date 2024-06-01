@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn-primary {
+    @apply bg-main capitalize font-normal text-base p-2 h-12 rounded-xl cursor-pointer hover:shadow-lg hover:scale-105 hover:bg-accent  hover:text-white duration-200;
+  }
+  .btn-secondary {
+    @apply bg-accent text-white capitalize font-normal text-base p-2 h-12 rounded-xl cursor-pointer hover:shadow-lg hover:scale-105 hover:text-white duration-200;
+  }
+}
+
 .hamb-menu {
   @apply w-[30px] h-[2px] my-2 block bg-black;
 }
